@@ -7,19 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="187" Width="525">
     <Grid>
-        <TextBox x:Name="Num1" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="Primo numero" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="Num2" HorizontalAlignment="Left" Height="23" Margin="194,10,0,0" TextWrapping="Wrap" Text="Secondo numero" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="Result" HorizontalAlignment="Left" Height="23" Margin="387,10,0,0" TextWrapping="Wrap" Text="Risultato" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Num1" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Num2" HorizontalAlignment="Left" Height="23" Margin="194,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Result" HorizontalAlignment="Left" Height="23" Margin="387,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="54" Margin="135,10,0,0"/>
         <Button x:Name="CheckButton" Content="=" HorizontalAlignment="Left" Margin="319,10,0,0" VerticalAlignment="Top" Width="63" Click="CheckButton_Click"/>
-        <TextBox x:Name="Num1_Copy" HorizontalAlignment="Left" Height="23" Margin="10,52,0,0" TextWrapping="Wrap" Text="Primo numero" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Num1_Copy" HorizontalAlignment="Left" Height="23" Margin="10,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="comboBox_Copy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="54" Margin="135,53,0,0"/>
-        <TextBox x:Name="Result_Copy" HorizontalAlignment="Left" Height="23" Margin="273,52,0,0" TextWrapping="Wrap" Text="Risultato" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Result_Copy" HorizontalAlignment="Left" Height="23" Margin="273,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="CheckButton_Copy" Content="=" HorizontalAlignment="Left" Margin="194,52,0,0" VerticalAlignment="Top" Width="63" Click="CheckButton2_Click"/>
-        <TextBox x:Name="random1" HorizontalAlignment="Left" Height="23" Margin="10,93,0,0" TextWrapping="Wrap" Text="Numero minimo" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="random2" HorizontalAlignment="Left" Height="23" Margin="150,93,0,0" TextWrapping="Wrap" Text="Numero massimo" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="random1" HorizontalAlignment="Left" Height="23" Margin="10,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="random2" HorizontalAlignment="Left" Height="23" Margin="150,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="RandomButton" Content="Random!" HorizontalAlignment="Left" Margin="275,93,0,0" VerticalAlignment="Top" Width="63" Click="randomCheck"/>
-        <TextBox x:Name="RandomResult" HorizontalAlignment="Left" Height="23" Margin="354,93,0,0" TextWrapping="Wrap" Text="Risultato" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="RandomResult" HorizontalAlignment="Left" Height="23" Margin="354,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="AcButton" Content="AC" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="399,125,0,0" Click="AcButton_Click"/>
 
     </Grid>
 </Window>

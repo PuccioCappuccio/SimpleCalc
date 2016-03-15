@@ -39,6 +39,11 @@ namespace WpfApplication1
 
         private void CheckButton_Click(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(Num1.Text) || string.IsNullOrWhiteSpace(Num2.Text))
+            {
+                MessageBox.Show("Campi vuoti, riempili tutti");
+            }
+            else { 
             switch (comboBox.SelectedIndex)
             {
                 case 0:         //+
@@ -61,12 +66,18 @@ namespace WpfApplication1
                         Result.Text = ((float.Parse(Num1.Text)) / (float.Parse(Num2.Text))).ToString();
                         break;
                     }
+                }
             }
         }
 
         private void CheckButton2_Click(object sender, RoutedEventArgs e)
         {
-            switch(comboBox_Copy.SelectedIndex)
+            if (string.IsNullOrWhiteSpace(Num1_Copy.Text))
+            {
+                MessageBox.Show("Campi vuoti, riempili tutti");
+            }
+            else { 
+            switch (comboBox_Copy.SelectedIndex)
             {
                 case 0:
                     {
@@ -83,14 +94,33 @@ namespace WpfApplication1
                         Result_Copy.Text = Math.Pow((Int32.Parse(Num1_Copy.Text)), 4).ToString();
                         break;
                     }
+                }
             }
         }
         
 
         private void randomCheck(object sender, RoutedEventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(random1.Text)|| string.IsNullOrWhiteSpace(random2.Text))
+            {
+                MessageBox.Show("Campi vuoti, riempili tutti");
+            }
+            else { 
             Random rnd = new Random();
             RandomResult.Text = rnd.Next(Int32.Parse(random1.Text), Int32.Parse(random2.Text)).ToString();
+            }
+        }
+
+        private void AcButton_Click(object sender, RoutedEventArgs e)
+        {
+            Num1.Text = "";
+            Num2.Text = "";
+            Num1_Copy.Text = "";
+            random1.Text = "";
+            random2.Text = "";
+            Result.Text = "";
+            Result_Copy.Text = "";
+            RandomResult.Text = "";
         }
     }
 }
